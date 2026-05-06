@@ -7,12 +7,12 @@ An AI-assisted radiology workflow system that combines medical image segmentatio
 ## Architecture
 
 ```
-┌──────────────┐      ┌────────────────────────┐     ┌─────────────────────┐
-│  Radiologist │────▶│     Frontend SPA       │────▶│   FastAPI Backend   │
-│  (Browser)   │◀────│  React 19 + TypeScript │◀────│   Python + Pydantic │
-└──────────────┘      │  Vite + TailwindCSS    │     └────────┬────────────┘
-                      │                        │              │
-                      │  ┌─StudyPanel──────┐   │     ┌────────┴────────────┐
+┌──────────────┐      ┌────────────────────────┐      ┌─────────────────────┐
+│  Radiologist │────▶│     Frontend SPA        │────▶│   FastAPI Backend   │
+│  (Browser)   │◀────│  React 19 + TypeScript  │◀────│   Python + Pydantic │
+└──────────────┘      │  Vite + TailwindCSS    │      └────────┬────────────┘
+                      │                        │               │
+                      │  ┌─StudyPanel──────┐   │     ┌─────────┴───────────┐
                       │  │ Upload + List   │   │     │                     │
                       │  └─────────────────┘   │     ▼                     ▼
                       │  ┌─ViewerWorkspace─┐   │   ┌──────────┐  ┌──────────────┐
