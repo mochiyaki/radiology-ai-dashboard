@@ -9,24 +9,24 @@ An AI-assisted radiology workflow system that combines medical image segmentatio
 ![Architecture Diagram](architecture-diagram.html)
 
 ```
-┌──────────────┐     ┌────────────────────────┐     ┌─────────────────────┐
+┌──────────────┐      ┌────────────────────────┐     ┌─────────────────────┐
 │  Radiologist │────▶│     Frontend SPA       │────▶│   FastAPI Backend   │
 │  (Browser)   │◀────│  React 19 + TypeScript │◀────│   Python + Pydantic │
-└──────────────┘     │  Vite + TailwindCSS    │     └────────┬────────────┘
-                     │                        │              │
-                     │  ┌─StudyPanel──────┐   │     ┌────────┴────────────┐
-                     │  │ Upload + List   │   │     │                     │
-                     │  └─────────────────┘   │     ▼                     ▼
-                     │  ┌─ViewerWorkspace─┐   │   ┌──────────┐  ┌──────────────┐
-                     │  │ DICOM + ROI     │   │   │ MedSAM2  │  │  MedGemma    │
-                     │  │ Seg Overlay     │   │   │ Service  │  │  Service     │
-                     │  └─────────────────┘   │   └────┬─────┘  └──┬─────┬─────┘
-                     │  ┌─DecisionPanel───┐   │        │           │     │
-                     │  │ Accept / Reject │   │        ▼           ▼     ▼
-                     │  │ Confidence      │   │   ┌─────────┐ ┌──────┐ ┌───────┐
-                     │  └─────────────────┘   │   │HTTP/    │ │Nebius│ │Hugging│
-                     └────────────────────────┘   │Mock     │ │QwenVL│ │Face   │
-                                                  └─────────┘ └──────┘ └───────┘
+└──────────────┘      │  Vite + TailwindCSS    │     └────────┬────────────┘
+                      │                        │              │
+                      │  ┌─StudyPanel──────┐   │     ┌────────┴────────────┐
+                      │  │ Upload + List   │   │     │                     │
+                      │  └─────────────────┘   │     ▼                     ▼
+                      │  ┌─ViewerWorkspace─┐   │   ┌──────────┐  ┌──────────────┐
+                      │  │ DICOM + ROI     │   │   │ MedSAM2  │  │  MedGemma    │
+                      │  │ Seg Overlay     │   │   │ Service  │  │  Service     │
+                      │  └─────────────────┘   │   └────┬─────┘  └──┬─────┬─────┘
+                      │  ┌─DecisionPanel───┐   │        │           │     │
+                      │  │ Accept / Reject │   │        ▼           ▼     ▼
+                      │  │ Confidence      │   │   ┌─────────┐ ┌──────┐ ┌───────┐
+                      │  └─────────────────┘   │   │HTTP/    │ │Nebius│ │Hugging│
+                      └────────────────────────┘   │Mock     │ │QwenVL│ │Face   │
+                                                   └─────────┘ └──────┘ └───────┘
 ```
 
 ---
