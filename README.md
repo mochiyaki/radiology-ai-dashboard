@@ -267,4 +267,4 @@ Without any model configuration, the system runs in **mock mode** with determini
 
 ## License
 
-Private project — all rights reserved.
+MIT
