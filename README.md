@@ -1,4 +1,4 @@
-# MedTrace AI — Radiology Dashboard
+# Radiology AI Dashboard
 
 An AI-assisted radiology workflow system that combines medical image segmentation (MedSAM2) with vision-language report generation (MedGemma / Qwen VL) to produce draft radiology reports from DICOM studies, ready for physician review.
 
