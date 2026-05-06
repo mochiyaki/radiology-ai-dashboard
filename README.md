@@ -6,7 +6,7 @@ An AI-assisted radiology workflow system that combines medical image segmentatio
 
 ## Architecture
 
-![Architecture Diagram](architecture-diagram.html)
+![Architecture Diagram](./architecture-diagram.html)
 
 ```
 ┌──────────────┐      ┌────────────────────────┐     ┌─────────────────────┐
