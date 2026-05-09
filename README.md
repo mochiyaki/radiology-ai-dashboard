@@ -238,7 +238,7 @@ Without any model configuration, the system runs in **mock mode** with determini
 ┌──────────────────────────────────────────────────────────┐
 │  MedTrace AI - Radiology Workflow Dashboard              │
 ├────────────┬──────────────────────────┬──────────────────┤
-│            │  [Seg] [👁] [↩] [↪] [✕] │                  │
+│            │  [Seg] [👁] [↩] [↪] [x] │                  │
 │  Studies   │  ┌──────────────────────┐│  Draft Report    │
 │            │  │                      ││                  │
 │  ▸ Study 1 │  │   DICOM Viewport     ││  Confidence: 85% │
@@ -247,9 +247,9 @@ Without any model configuration, the system runs in **mock mode** with determini
 │            │  │                      ││  Impression: ... │
 │  [Upload]  │  └──────────────────────┘│  Recs: ...       │
 │            │  Brightness [━━━━]       │                  │
-│            │  Zoom      [━━━━]       │  [Accept] [Fix]  │
+│            │  Zoom      [━━━━]        │  [Accept] [Fix]  │
 ├────────────┴──────────────────────────┴──────────────────┤
-│  Ctrl+Z Undo  |  Ctrl+Y Redo  |  ROI: drag on viewport  │
+│  Ctrl+Z Undo  |  Ctrl+Y Redo  |  ROI: drag on viewport   │
 └──────────────────────────────────────────────────────────┘
 ```
 
